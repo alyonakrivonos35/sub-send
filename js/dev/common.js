@@ -169,12 +169,18 @@ const gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) =>
     });
   }
 };
+function pageLoaded() {
+  window.addEventListener("load", () => {
+    document.documentElement.setAttribute("data-fls-loaded", "");
+  });
+}
+pageLoaded();
 export {
   slideUp as a,
-  bodyLockToggle as b,
-  bodyLockStatus as c,
+  gotoBlock as b,
+  bodyLockToggle as c,
   dataMediaQueries as d,
-  gotoBlock as e,
+  bodyLockStatus as e,
   bodyUnlock as f,
   getDigFormat as g,
   getHash as h,
