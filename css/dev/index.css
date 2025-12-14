@@ -799,7 +799,7 @@ textarea.input {
     width: calc(100% - 0.9375rem);
     height: calc(100svh - 3.4375rem);
     left: -100%;
-    top: 4.0625rem;
+    top: 3.3125rem;
     overflow: auto;
     padding: 3.125rem 0.9375rem 1.875rem 0.9375rem;
     transition: left 0.3s;
@@ -868,6 +868,9 @@ textarea.input {
     transform: rotate(45deg);
   }
   .header {
+    padding-block: 1.25rem;
+  }
+  .header--scroll {
     padding-block: 1.25rem;
   }
   .header__container {
